@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: url('ash\ ketchum\ pokemon\ GIF.gif');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(55px);
+    height: 100vh;
+    margin: 0; 
+}
+.navbar{
+    font-family: "Ubuntu", sans-serif;
+    height:85px;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+}
+#pokeball{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.title_pokemon{
+    position: absolute;
+    top: 30px;
+    left: 70px;
+}
+#pokemon_logo{
+    margin-left: 43.5%;
+    margin-top: 117px;
+}
+#pokemon_name{
+    height: 50px;
+    width: 420px;
+    border-radius: 5px;
+    border: 1.5px solid ;
+    background-color: aliceblue;
+    font-size: 17px;
+    padding-left: 10px;
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    top:310px;
+    left:34%;
+    box-shadow: -6px 7px  ;
+}
+#btn{
+    height: 50px;
+    width: 60px;
+    background-color: red;
+    color: aliceblue;
+    border: solid black;
+    box-shadow: 4px 5px   black;
+    font-size: larger;
+    border-radius: 8px;
+    position: absolute;
+    top:310px;
+    left:62%;
+}
+#pokemon_name::placeholder{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+    padding-left: 10px;
+}
+#pokemon_name:focus::placeholder{
+    color: transparent;
+}
+#pokemon_name:hover{
+    box-shadow: -5px 6px;
+    transition: 1s;
+}
+#btn:hover{
+    box-shadow: 2px 2px   black;
+    transition: 1s;
+}
+#cards{
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 7%;
+    margin-left: 39%;
+    height: 480px;
+    width: 300px;
+    background-color: aliceblue;
+    border: solid 2px black;
+    box-shadow:5px 2px 5px;
+    border-radius: 20px;
+    overflow: none;
+}
+/*#cards #output_name{
+    position: absolute;
+
+}*/
+#cards #pokemon_img{
+    height: 140px;
+    width: 140px;
+}
+/*
+.abilities_text{
+    position: absolute;
+}
+#cards #abilities{
+    position: absolute;
+}
+.stats_text{
+    position: absolute;
+}
+#cards #stats{
+    position: absolute;
+}*/
+
+#abilities{
+    margin-left: -65px;
+}
+
+#abilities li,
+#stats li {
+  list-style: none;
+  position: relative;
+  margin-top: 3px;
+  padding-left: 25px; 
+  margin-bottom: 8px;
+}
+
+#abilities li::before,
+#stats li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-image: url('pokeball.png');
+  background-size: contain;
+}
+#stats{
+    margin-left: 20px;
+}
+#output_name , .abilities_text , .stats_text{
+    text-decoration: underline;
+}
+

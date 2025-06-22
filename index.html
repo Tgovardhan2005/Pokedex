@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" type="image/png" href="Pokeball.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <img id="pokeball" src="pokeball2.png" height="45" width="50"> <h2 class="title_pokemon">Pokédex</h2>
+    </div>
+    <img id="pokemon_logo" src="pokemon logo.png" height="110" width="158">
+    <form>
+        <input type="text" id="pokemon_name" placeholder="Enter a Pokemon Name">
+    </form>
+    <button onclick="searchPokemon()" id="btn">Go</button>
+    <div id="cards">
+        <h2 id="output_name"></h2>
+        <img id="pokemon_img">
+        <h2 class="abilities_text">ABILITIES</h2>
+        <ul id="abilities"></ul>
+        <h2 class="stats_text">STATS</h2>
+        <ul id="stats"></ul>
+    </div>
+</body>
+</html>

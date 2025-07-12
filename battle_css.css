@@ -257,7 +257,7 @@ body {
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
     padding: 30px 25px;
     animation: slideUp 0.6s ease-out;
-    overflow: visible; /* Make sure glow is not clipped */
+    overflow: visible; 
     z-index: 10;
 }
 
@@ -378,7 +378,7 @@ body {
     animation: winnerGlow 1.5s linear infinite, gradientShift 3s ease infinite;
     z-index: 50 !important;
     position: relative;
-    background: rgba(255,255,255,0.15); /* Slightly more opaque for contrast */
+    background: rgba(255,255,255,0.15); 
 }
 
 @keyframes winnerGlow {
@@ -391,8 +391,6 @@ body {
         border-color: #ff6b6b;
     }
 }
-
-/* Confetti animation */
 .confetti {
     pointer-events: none;
     position: absolute;
@@ -423,7 +421,7 @@ body {
     }
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) {
     .confetti-piece {
         width: 8px;
@@ -634,7 +632,6 @@ body {
     }
 }
 
-/* Loading animation */
 .loading {
     display: inline-block;
     width: 20px;
@@ -645,12 +642,10 @@ body {
     animation: spin 1s ease-in-out infinite;
 }
 
-/* Smooth transitions for all interactive elements */
 * {
     transition: all 0.3s ease;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }

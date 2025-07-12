@@ -1,66 +1,50 @@
-# Pokédex Web App&nbsp; 
+# Pokedex 💧🍀🔥⚡
 
-A simple Pokédex web application built using HTML, CSS, and JavaScript. This project allows users to search for any Pokémon by name and view its basic information, abilities, and stats, using data fetched from the [PokéAPI](https://pokeapi.co/).  
-&nbsp;
+A web-based Pokédex application that allows users to browse, search, and view details about various Pokémon. Built with HTML, CSS, and JavaScript.
 
-## Features&nbsp; 🕵️‍♂️✨
+## Features
 
-- **Pokémon Search:** Search for any Pokémon by name.  
-- **Live Data:** Fetches real-time Pokémon data (abilities, stats, and images) from PokéAPI.
-- **Error Handling:** Alerts for invalid input or if a Pokémon is not found.
-- **Dynamic Updates:** Displays abilities and stats in a user-friendly format.
-- **Visual Effects:** Background image and blur filter applied when Pokémon data is shown.
+- **Search Functionality:** Quickly search for your favorite Pokémon by name.
+- **Detailed View:** See stats, types, abilities, and images for each Pokémon.
+- **Battle Option:** You can perform battle by selecting pokemons.
+- **Responsive Design:** Looks great on both desktop and mobile devices.
+- **Modern UI:** Clean and easy-to-use interface with a focus on usability.
 
-## How to Use&nbsp; 🔎
+## Screenshots
 
-1. **Clone or Download the Repository**
+<!-- Add screenshots here if available -->
+<!-- ![Screenshot1](screenshots/screenshot1.png) -->
 
+## Getting Started
+
+### Installation
+
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Tgovardhan2005/pokedex-webapp.git
+   git clone https://github.com/Tgovardhan2005/Pokedex.git
+   cd Pokedex
    ```
 
-2. **Open the App**
+2. **Open in Browser:**
+   - Open `index.html` directly in your browser
+   - Or, use a local server for features like API calls (recommended)
 
-   - Open `index.html` in your browser.
+### Usage
 
-3. **Search for a Pokémon**
+- Search for Pokémon using the search bar.
+- Click on a Pokémon to view more details.
+- Pokemon Battle.
 
-   - Enter the name of a Pokémon (e.g., `pikachu`, `bulbasaur` ⚡️🌱) in the input field.
-   - Click the **Go** button or press Enter.
-   - The app will display the Pokémon's image, name, abilities, and stats.
+## Technologies Used
 
-- `index.html`: Main HTML file with UI structure.
-- `styles.css`: Contains all styling for the app.
-- `script.js`: Handles API calls and DOM updates.
-- Image and asset files for UI elements.
+- **HTML5** – Structure the application.
+- **CSS3** – For layout and responsive design.
+- **JavaScript** – For dynamic content and interactions.
+- **[PokéAPI](https://pokeapi.co/)** – Source of Pokémon data and images.
 
-## API Used&nbsp; 🌐
+## Acknowledgements
 
-- **PokéAPI**  
-  [https://pokeapi.co/](https://pokeapi.co/)  
-  An open RESTful API for Pokémon data.
-
-## Key Learnings&nbsp; 🧠
-
-- Working with RESTful APIs in JavaScript using `fetch`.
-- DOM manipulation for dynamic UI updates.
-- Error handling for user input and API responses.
-- Responsive and interactive web design.
-- Integrating external assets (images, backgrounds, icons).
-
-## Screenshots&nbsp; 📸
-
-![image](https://github.com/user-attachments/assets/28391f00-8a00-4d33-bd82-dcc47dd507c4)
-
-## Credits&nbsp; 🙏
-
-- Pokémon data & images: [PokéAPI](https://pokeapi.co/)
-- Pokémon and related assets © Nintendo, Game Freak, The Pokémon Company
-
-## License&nbsp; 📜
-
-This project is for educational purposes.
+- [PokéAPI](https://pokeapi.co/) for providing the Pokémon data.
+- Pokémon and Pokémon character names are trademarks of Nintendo.
 
 ---
-
-*Happy coding! &nbsp;🎮🧑‍💻⚡️*

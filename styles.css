@@ -471,12 +471,10 @@ body {
     animation: spin 1s ease-in-out infinite;
 }
 
-/* Smooth transitions for all interactive elements */
 * {
     transition: all 0.3s ease;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }

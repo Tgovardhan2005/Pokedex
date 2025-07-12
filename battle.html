@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" type="image/png" href="Pokeball.png">
+    <link rel="stylesheet" href="battle_css.css">
+    <script src="battle_script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <img id="pokeball" src="pokeball2.png" height="45" width="50">
+        <h2 class="title_pokemon">PokéBattle</h2>
+        <a class="title_pokedex" href="index.html">Pokédex</a>
+    </div>
+    <img id="pokemon_logo" src="pokemon logo.png" height="110" width="158">
+    <div class="search_boxes">
+        <div class="search-container1">
+            <input type="text" class="pokemon_name1" placeholder="Enter a Pokémon name...">
+            <button type="button" onclick="searchPokemon()" class="btn">Search</button>
+        </div>
+        <img id="vs" src="vs.png" >
+        <div class="search-container2">
+            <input type="text" class="pokemon_name2" placeholder="Enter a Pokémon name...">
+            <button type="button" onclick="searchPokemonvs()" class="btn">Search</button>
+        </div>
+    </div>
+    <div class="search_boxes">
+        <div id="cards1">
+            <h2 id="output_name"></h2>
+            <img id="pokemon_img">
+            <h2 class="abilities_text">ABILITIES</h2>
+            <ul id="abilities"></ul>
+        </div>
+        <button type="button" onclick="Battle()" class="btn_battle">Battle</button>
+        <div id="cards2">
+            <h2 id="output_name2"></h2>
+            <img id="pokemon_img2">
+            <h2 class="abilities_text2">ABILITIES</h2>
+            <ul id="abilities2"></ul>
+        </div>
+    </div>
+
+</body>
+</html>

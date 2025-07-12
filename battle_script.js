@@ -9,7 +9,6 @@ function searchPokemon(){
         return;
     }
     
-    // Add loading state
     btn1.innerHTML = '<span class="loading"></span>';
     btn1.disabled = true;
     
@@ -27,24 +26,17 @@ function searchPokemon(){
                 return;
             }
             
-            // Hide logo and show card with animation
             document.getElementById("pokemon_logo").style.display = "none";
             document.body.style.backgroundImage = `linear-gradient(135deg, rgba(18, 18, 35, 0.95), rgba(44, 62, 80, 0.9)), url("vilot_background.jpg")`;
             
             cards1.style.display = "flex";
             
-            // Remove winner glow on new search
             cards1.classList.remove("winner-glow");
             cards2.classList.remove("winner-glow");
             
-            // Clear input
-            /*document.getElementsByClassName("pokemon_name1")[0].value = '';*/
-            
-            // Populate card data
             document.getElementById("output_name").textContent = data.name.toUpperCase();
             document.getElementById("pokemon_img").src = data.sprites.front_default;
             
-            // Populate abilities
             const abilitiesList = document.getElementById("abilities");
             abilitiesList.innerHTML = '';
             data.abilities.forEach(function(item){
@@ -54,7 +46,6 @@ function searchPokemon(){
             });
 
             
-            // Reset button
             btn1.innerHTML = 'Search';
             btn1.disabled = false;
         })
@@ -62,12 +53,10 @@ function searchPokemon(){
             alert("Pokémon not found! Please check the spelling and try again.");
             console.error(error);
             
-            // Reset button
             btn1.innerHTML = 'Search';
             btn1.disabled = false;
         });
 
-// Add Enter key support
 document.addEventListener('DOMContentLoaded', function() {
     const input = document.getElementsByClassName('pokemon_name1');
     input[0].addEventListener('keypress', function(e) {
@@ -103,7 +92,6 @@ function searchPokemonvs(){
     }
     btn_battle.style.display="block";  
     
-    // Add loading state
     btn1.innerHTML = '<span class="loading"></span>';
     btn1.disabled = true;
     
@@ -121,24 +109,17 @@ function searchPokemonvs(){
                 return;
             }
             
-            // Hide logo and show card with animation
             document.getElementById("pokemon_logo").style.display = "none";
             document.body.style.backgroundImage = `linear-gradient(135deg, rgba(18, 18, 35, 0.95), rgba(44, 62, 80, 0.9)), url("vilot_background.jpg")`;
             
             cards2.style.display = "flex";
             
-            // Remove winner glow on new search
             cards1.classList.remove("winner-glow");
             cards2.classList.remove("winner-glow");
             
-            // Clear input
-            /*document.getElementsByClassName("pokemon_name2")[0].value = '';*/
-            
-            // Populate card data
             document.getElementById("output_name2").textContent = data.name.toUpperCase();
             document.getElementById("pokemon_img2").src = data.sprites.front_default;
             
-            // Populate abilities
             const abilitiesList = document.getElementById("abilities2");
             abilitiesList.innerHTML = '';
             data.abilities.forEach(function(item){
@@ -146,7 +127,7 @@ function searchPokemonvs(){
                 li.textContent = item.ability.name.charAt(0).toUpperCase() + item.ability.name.slice(1).replace('-', ' ');
                 abilitiesList.appendChild(li);
             });            
-            // Reset button
+
             btn1.innerHTML = 'Search';
             btn1.disabled = false;
         })
@@ -154,13 +135,12 @@ function searchPokemonvs(){
             alert("Pokémon not found! Please check the spelling and try again.");
             console.error(error);
             
-            // Reset button
+
             btn1.innerHTML = 'Search';
             btn1.disabled = false;
         });
 }
 
-// Add Enter key support
 document.addEventListener('DOMContentLoaded', function() {
     const input = document.getElementsByClassName('pokemon_name2');
     input[0].addEventListener('keypress', function(e) {
@@ -171,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function addConfetti(card) {
-    // Remove previous confetti if any
+
     const oldConfetti = card.querySelector('.confetti');
     if (oldConfetti) oldConfetti.remove();
 
@@ -209,10 +189,8 @@ function Battle(){
     const pokemon_name1=document.getElementById("output_name");
     const pokemon_name2=document.getElementById("output_name2");
 
-    // Remove previous glow
     cards1.classList.remove("winner-glow");
     cards2.classList.remove("winner-glow");
-    // Use computed style to check visibility
     if (window.getComputedStyle(cards1).display === "none" || window.getComputedStyle(cards2).display === "none") {
         alert("Please search for both Pokémon before battling!");
         return;
@@ -249,7 +227,6 @@ function Battle(){
                 won2++;
             }
         }
-        // Highlight winner card and show confetti
         if(won1 > won2){
             pokemon_name1.textContent="WINNER";
             cards1.classList.add("winner-glow");

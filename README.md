@@ -1,6 +1,6 @@
 # Pokedex 💧🍀🔥⚡
 
-A web-based Pokédex application that allows users to browse, search, and view details about various Pokémon. Built with HTML, CSS, and JavaScript.
+A web-based Pokédex application that allows users to browse, search,battle and view details about various Pokémon. Built with HTML, CSS, and JavaScript.
 
 ## Features
 

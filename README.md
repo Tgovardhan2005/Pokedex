@@ -11,9 +11,16 @@ A web-based Pokédex application that allows users to browse, search,battle and 
 - **Modern UI:** Clean and easy-to-use interface with a focus on usability.
 
 ## Screenshots
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e58bfc03-44e9-4ee9-9b16-f96503dd0867" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c4200ef9-7711-4611-af74-3a9e28602a84" />
+<img width="1919" height="392" alt="image" src="https://github.com/user-attachments/assets/d9910763-ab17-4fb4-89b1-42c77f3a2555" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/111bb195-55cd-488d-a171-56e2caf15ad6" />
 
-<!-- Add screenshots here if available -->
-<!-- ![Screenshot1](screenshots/screenshot1.png) -->
+
+
+
+
+
 
 ## Getting Started
 

@@ -47,5 +47,3 @@ A web-based Pokédex application that allows users to browse, search,battle and 
 
 - [PokéAPI](https://pokeapi.co/) for providing the Pokémon data.
 - Pokémon and Pokémon character names are trademarks of Nintendo.
-
----
